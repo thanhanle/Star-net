@@ -1,0 +1,383 @@
+Terminal 1:
+D:\tal\Documents\School\Fall 18\CS 3251\projects\P2-m2>python star-node.py star1 4000 127.0.0.1 4001 3
+Traceback (most recent call last):
+  File "star-node.py", line 352, in receiving
+    packet, address = self.socket.recvfrom(64000)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Star-node command: From star3: "A"
+show-status
+Active nodes:
+Name:
+star3
+RTT:
+0.0
+
+Name:
+star2
+RTT:
+0.0
+
+Hub Node: star3
+
+Star-node command: show-logs
+2018-11-11 23:19:28 INFO Sent Discovery Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:28 INFO Recalculated RTTsum
+2018-11-11 23:19:28 INFO New hub selected:star1 - 127.0.0.1 - 4000
+2018-11-11 23:19:33 INFO Recalculated RTTsum
+2018-11-11 23:19:33 INFO Sent Discovery Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:33 INFO Received Discovery ACK : 127.0.0.1 - 4001
+2018-11-11 23:19:37 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:19:37 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:19:37 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:19:38 INFO Recalculated RTTsum
+2018-11-11 23:19:38 INFO Sent Discovery Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:38 INFO Received Discovery ACK : 127.0.0.1 - 4001
+2018-11-11 23:19:42 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:19:42 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:19:42 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:19:42 INFO Received Final Discovery Packet from : 127.0.0.1 - 4002
+2018-11-11 23:19:42 INFO Discovered new node: 127.0.0.1 - 4002
+2018-11-11 23:19:42 INFO Discovered new node: 127.0.0.1 - 4001
+2018-11-11 23:19:42 INFO Discovered new node: 127.0.0.1 - 4000
+2018-11-11 23:19:42 INFO Sent DiscveryACK Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:43 INFO Recalculated RTTsum
+2018-11-11 23:19:43 INFO Recalculated RTTsum
+2018-11-11 23:19:43 INFO Recalculated RTTsum
+2018-11-11 23:19:43 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:43 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:43 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:43 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:19:43 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:43 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:19:45 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:19:45 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:19:45 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:19:45 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:19:47 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:19:47 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:19:47 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:19:47 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:19:48 INFO Recalculated RTTsum
+2018-11-11 23:19:48 INFO Recalculated RTTsum
+2018-11-11 23:19:48 INFO Recalculated RTTsum
+2018-11-11 23:19:48 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:48 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:48 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:48 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:19:48 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:48 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:19:48 INFO Received Message Packet from hub : 127.0.0.1 - 4002
+2018-11-11 23:19:48 INFO Sent FileACK Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:50 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:19:50 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:19:50 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:19:50 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:19:52 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:19:52 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:19:52 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:19:52 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:19:53 INFO Recalculated RTTsum
+2018-11-11 23:19:53 INFO Recalculated RTTsum
+2018-11-11 23:19:53 INFO Recalculated RTTsum
+2018-11-11 23:19:53 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:53 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:53 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:53 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:19:53 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:53 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:19:55 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:19:55 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:19:55 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:19:55 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:19:57 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:19:57 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:19:57 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:19:57 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:19:58 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:58 INFO Recalculated RTTsum
+2018-11-11 23:19:58 INFO Recalculated RTTsum
+2018-11-11 23:19:58 INFO Recalculated RTTsum
+2018-11-11 23:19:58 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:19:58 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:58 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:19:58 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:19:58 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:00 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:00 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:00 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:00 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:02 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:02 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:02 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:02 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:03 INFO Recalculated RTTsum
+2018-11-11 23:20:03 INFO Recalculated RTTsum
+2018-11-11 23:20:03 INFO Recalculated RTTsum
+2018-11-11 23:20:03 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:03 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:03 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:03 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:03 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:03 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:05 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:05 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:05 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:05 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:07 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:07 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:07 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:07 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:08 INFO Recalculated RTTsum
+2018-11-11 23:20:08 INFO Recalculated RTTsum
+2018-11-11 23:20:08 INFO Recalculated RTTsum
+2018-11-11 23:20:08 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:08 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:08 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:08 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:08 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:08 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:10 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:10 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:10 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:10 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:12 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:12 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:12 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:12 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:13 INFO Recalculated RTTsum
+2018-11-11 23:20:13 INFO Recalculated RTTsum
+2018-11-11 23:20:13 INFO Recalculated RTTsum
+2018-11-11 23:20:13 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:13 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:13 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:13 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:13 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:13 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:15 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:15 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:15 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:15 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:17 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:17 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:17 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:17 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:18 INFO Recalculated RTTsum
+2018-11-11 23:20:18 INFO Recalculated RTTsum
+2018-11-11 23:20:18 INFO Recalculated RTTsum
+2018-11-11 23:20:18 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:18 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:18 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:18 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:18 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:18 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:20 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:20 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:20 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:20 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:22 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:22 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:22 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:22 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:23 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:23 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:23 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:23 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:23 INFO Recalculated RTTsum
+2018-11-11 23:20:23 INFO Recalculated RTTsum
+2018-11-11 23:20:23 INFO Recalculated RTTsum
+2018-11-11 23:20:23 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:23 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:25 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:25 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:25 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:25 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:27 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:27 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:27 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:27 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:28 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:28 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:28 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:28 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:28 INFO Recalculated RTTsum
+2018-11-11 23:20:28 INFO Recalculated RTTsum
+2018-11-11 23:20:28 INFO Recalculated RTTsum
+2018-11-11 23:20:28 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:28 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:30 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:30 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:30 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:30 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:32 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:32 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:32 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:32 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:33 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:33 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:33 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:33 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:33 INFO Recalculated RTTsum
+2018-11-11 23:20:33 INFO Recalculated RTTsum
+2018-11-11 23:20:33 INFO Recalculated RTTsum
+2018-11-11 23:20:33 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:33 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:35 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:35 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:35 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:35 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:37 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:37 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:37 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:37 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:38 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:38 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:38 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:38 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:38 INFO Recalculated RTTsum
+2018-11-11 23:20:38 INFO Recalculated RTTsum
+2018-11-11 23:20:38 INFO Recalculated RTTsum
+2018-11-11 23:20:38 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:38 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:40 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:40 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:40 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:40 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:42 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:42 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:42 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:42 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:43 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:43 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:43 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:43 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:43 INFO Recalculated RTTsum
+2018-11-11 23:20:43 INFO Recalculated RTTsum
+2018-11-11 23:20:43 INFO Recalculated RTTsum
+2018-11-11 23:20:43 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:43 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:45 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:45 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:45 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:45 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:47 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:47 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:47 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:47 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:48 INFO New hub selected:star3 - 127.0.0.1 - 4002
+2018-11-11 23:20:48 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:48 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:48 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:48 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:48 INFO Recalculated RTTsum
+2018-11-11 23:20:48 INFO Recalculated RTTsum
+2018-11-11 23:20:48 INFO Recalculated RTTsum
+2018-11-11 23:20:48 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:48 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:50 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:50 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:50 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:50 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:52 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:52 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:52 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:52 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:53 INFO New hub selected:star1 - 127.0.0.1 - 4000
+2018-11-11 23:20:53 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:53 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:53 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:53 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:53 INFO Recalculated RTTsum
+2018-11-11 23:20:53 INFO Recalculated RTTsum
+2018-11-11 23:20:53 INFO Recalculated RTTsum
+2018-11-11 23:20:53 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:53 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:55 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:20:55 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:20:55 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:20:55 INFO Updated RTT sum for : 127.0.0.1 - 4002
+2018-11-11 23:20:57 INFO Received RTTsum Packet from : 127.0.0.1 - 4001
+2018-11-11 23:20:57 INFO Updated RTT sum for : 127.0.0.1 - 4001
+2018-11-11 23:20:57 INFO Received RTT request from : 127.0.0.1 - 4001
+2018-11-11 23:20:57 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4001
+2018-11-11 23:20:58 INFO New hub selected:star3 - 127.0.0.1 - 4002
+2018-11-11 23:20:58 INFO Sent RTT Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:58 INFO Sent RTT Packet to : 127.0.0.1 - 4001
+2018-11-11 23:20:58 INFO Received RTT response from : 127.0.0.1 - 4002
+2018-11-11 23:20:58 INFO Received RTT response from : 127.0.0.1 - 4001
+2018-11-11 23:20:58 INFO Recalculated RTTsum
+2018-11-11 23:20:58 INFO Recalculated RTTsum
+2018-11-11 23:20:58 INFO Recalculated RTTsum
+2018-11-11 23:20:58 INFO Sent RTTSum Packet to : 127.0.0.1 - 4002
+2018-11-11 23:20:58 INFO Sent RTTSum Packet to : 127.0.0.1 - 4001
+2018-11-11 23:21:00 INFO Received RTT request from : 127.0.0.1 - 4002
+2018-11-11 23:21:00 INFO Sent RTT Packet ACK to : 127.0.0.1 - 4002
+2018-11-11 23:21:00 INFO Received RTTsum Packet from : 127.0.0.1 - 4002
+2018-11-11 23:21:00 INFO Updated RTT sum for : 127.0.0.1 - 4002
+
+Star-node command: From star2: "A"
+
+
+
+
+
+
+
+
+
+
+
+Terminal 2:
+D:\tal\Documents\School\Fall 18\CS 3251\projects\P2-m2>python star-node.py star2 4001 127.0.0.1 4002 3
+Traceback (most recent call last):
+  File "star-node.py", line 352, in receiving
+    packet, address = self.socket.recvfrom(64000)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Star-node command: Traceback (most recent call last):
+  File "star-node.py", line 352, in receiving
+    packet, address = self.socket.recvfrom(64000)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+From star3: "A"
+send "A"
+Star-node command:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Terminal 3:
+D:\tal\Documents\School\Fall 18\CS 3251\projects\P2-m2>python star-node.py star3 4002 127.0.0.1 4004 3
+Traceback (most recent call last):
+  File "star-node.py", line 352, in receiving
+    packet, address = self.socket.recvfrom(64000)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Star-node command: send "A"
+Star-node command: show-status
+Active nodes:
+Name:
+star2
+RTT:
+0.0
+
+Name:
+star1
+RTT:
+0.0
+
+Hub Node: star3
+
+Star-node command: From star2: "A"
